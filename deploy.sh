@@ -7,7 +7,7 @@ set -e
 npm run deploy-storybook
 
 # cd 到构建输出的目录下 
-cd dist
+cd storybook-static
 
 git init
 git add -A
