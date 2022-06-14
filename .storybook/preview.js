@@ -2,14 +2,19 @@ export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
   options: {
     storySort: {
-      order: ["Design", "Example"]
+      order: ["Introduction", "Design", "Example"]
     }
   },
   controls: {
+    expanded: true,
     matchers: {
       color: /(background|color)$/i,
       date: /Date$/
     }
+  },
+  docs: {
+    // Opt-out of inline rendering
+    // inlineStories: false docs顯示方式
   }
 };
 export const globalTypes = {

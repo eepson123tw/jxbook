@@ -1,5 +1,6 @@
 // Hahatest.stories.js
 
+// @ts-ignore
 import Hahatest from "./Hahatest.vue";
 import { screen, userEvent } from "@storybook/testing-library";
 
