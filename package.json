@@ -1,0 +1,41 @@
+{
+  "name": "jxBook",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "predeploy": "npm run build-storybook",
+    "deploy-storybook": "gh-pages -d storybook-static"
+  },
+  "dependencies": {
+    "pinia": "^2.0.14",
+    "vue": "^3.2.36",
+    "vue-router": "^4.0.15"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@rushstack/eslint-patch": "^1.1.0",
+    "@storybook/addon-actions": "^6.5.8",
+    "@storybook/addon-essentials": "^6.5.8",
+    "@storybook/addon-interactions": "^6.5.9",
+    "@storybook/addon-links": "^6.5.8",
+    "@storybook/builder-vite": "^0.1.36",
+    "@storybook/jest": "^0.0.10",
+    "@storybook/testing-library": "^0.0.12",
+    "@storybook/vue3": "^6.5.8",
+    "@vitejs/plugin-vue": "^2.3.3",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "babel-loader": "^8.2.5",
+    "eslint": "^8.5.0",
+    "eslint-plugin-storybook": "^0.5.12",
+    "eslint-plugin-vue": "^8.2.0",
+    "gh-pages": "^4.0.0",
+    "prettier": "^2.5.1",
+    "vite": "^2.9.9",
+    "vue-loader": "^16.8.3"
+  }
+}
