@@ -1,15 +1,18 @@
 {
   "name": "jxBook",
   "version": "0.0.0",
+  "storybook-deployer": {
+    "gitUsername": "Allen",
+    "gitEmail": "Allen@email.com",
+    "commitMessage": "Deploy Storybook [skip ci]"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview --port 4173",
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
     "storybook": "start-storybook -p 6006",
-    "predeploy": "npm run build-storybook",
-    "deploy-storybook": "gh-pages -d storybook-static",
-    "build-storybook": "build-storybook"
+    "deploy-storybook": "storybook-to-ghpages"
   },
   "dependencies": {
     "pinia": "^2.0.14",
@@ -25,6 +28,7 @@
     "@storybook/addon-links": "^6.5.8",
     "@storybook/builder-vite": "^0.1.36",
     "@storybook/jest": "^0.0.10",
+    "@storybook/storybook-deployer": "^2.8.11",
     "@storybook/testing-library": "^0.0.12",
     "@storybook/vue3": "^6.5.8",
     "@vitejs/plugin-vue": "^2.3.3",

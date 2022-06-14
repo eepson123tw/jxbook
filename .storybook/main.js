@@ -7,5 +7,14 @@ module.exports = {
   },
   features: {
     storyStoreV7: true
-  }
+  },
+  viteFinal: (config, { configType }) => {
+    // some configs
+    if (configType === "PRODUCTION") {
+      config.base = "/jxbook/";
+    }
+
+    return config;
+  },
+  staticDirs: ["../public"]
 };
