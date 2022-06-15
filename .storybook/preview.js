@@ -1,4 +1,5 @@
 import "tailwindcss/tailwind.css";
+import "./font/1.3.0/css/line-awesome.min.css";
 export const parameters = {
   actions: { argTypesRegex: "^on[A-Z].*" },
 
