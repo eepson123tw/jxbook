@@ -10,6 +10,9 @@ export default defineConfig({
       reactivityTransform: true
     })
   ],
+  build: {
+    minify: false
+  },
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url))

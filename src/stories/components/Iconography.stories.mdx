@@ -1,5 +1,4 @@
-import { Meta } from "@storybook/addon-docs";
-import { IconGallery } from "storybook-icon-gallery";
+import { Meta, IconGallery, IconItem } from "@storybook/addon-docs";
 
 <Meta title='Iconography' />
 
@@ -12,7 +11,7 @@ import { IconGallery } from "storybook-icon-gallery";
   font-size:45px
  }
  .font-big{
-  font-size:64px
+  font-size:44px
  }
   `}
 </style>
@@ -20,26 +19,14 @@ import { IconGallery } from "storybook-icon-gallery";
 # Iconography
 
 <IconGallery>
-  <IconGallery.Variants name='lab la-accessible-icon '>
-    <IconGallery.Variant size={32}>
-      <i class='lab la-accessible-icon font'></i>
-    </IconGallery.Variant>
-    <IconGallery.Variant size={45}>
-      <i class='lab la-accessible-icon font-mid'></i>
-    </IconGallery.Variant>
-    <IconGallery.Variant size={64}>
-      <i class='lab la-accessible-icon font-big'></i>
-    </IconGallery.Variant>
-  </IconGallery.Variants>
-  <IconGallery.Variants name='lab la-accessible-icon '>
-    <IconGallery.Variant size={32}>
-      <i class='lab la-accessible-icon font'></i>
-    </IconGallery.Variant>
-    <IconGallery.Variant size={45}>
-      <i class='lab la-accessible-icon font-mid'></i>
-    </IconGallery.Variant>
-    <IconGallery.Variant size={64}>
-      <i class='lab la-accessible-icon font-big'></i>
-    </IconGallery.Variant>
-  </IconGallery.Variants>
+  <IconItem name="mobile">
+    <i class='lab la-accessible-icon font'></i>
+  </IconItem>
+  <IconItem name="mobile">
+    <i class='lab la-accessible-icon font-mid'></i>
+  </IconItem>
+   <IconItem name="mobile">
+    <i class='lab la-accessible-icon font-big'></i>
+  </IconItem>
+
 </IconGallery>
