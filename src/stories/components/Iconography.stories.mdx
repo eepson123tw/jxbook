@@ -1,0 +1,45 @@
+import { Meta, Title } from "@storybook/addon-docs/";
+import { IconGallery } from "storybook-icon-gallery";
+
+# Iconography
+
+<Meta title='Iconography' />
+
+<style>
+  {`
+ .font{
+  font-size:32px
+ }
+ .font-mid{
+  font-size:45px
+ }
+ .font-big{
+  font-size:64px
+ }
+  `}
+</style>
+
+<IconGallery>
+  <IconGallery.Variants name='lab la-accessible-icon '>
+    <IconGallery.Variant size={32}>
+      <i class='lab la-accessible-icon font'></i>
+    </IconGallery.Variant>
+    <IconGallery.Variant size={45}>
+      <i class='lab la-accessible-icon font-mid'></i>
+    </IconGallery.Variant>
+    <IconGallery.Variant size={64}>
+      <i class='lab la-accessible-icon font-big'></i>
+    </IconGallery.Variant>
+  </IconGallery.Variants>
+  <IconGallery.Variants name='lab la-accessible-icon '>
+    <IconGallery.Variant size={32}>
+      <i class='lab la-accessible-icon font'></i>
+    </IconGallery.Variant>
+    <IconGallery.Variant size={45}>
+      <i class='lab la-accessible-icon font-mid'></i>
+    </IconGallery.Variant>
+    <IconGallery.Variant size={64}>
+      <i class='lab la-accessible-icon font-big'></i>
+    </IconGallery.Variant>
+  </IconGallery.Variants>
+</IconGallery>

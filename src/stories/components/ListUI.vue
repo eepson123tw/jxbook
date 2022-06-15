@@ -1,5 +1,5 @@
 <template>
-  <ul>
+  <ul class="bg-red-800">
     <template v-if="list && list?.length">
       <ListItem v-for="item of list" :key="item" :label="item"></ListItem>
     </template>
@@ -29,6 +29,6 @@ ul {
   width: 150px;
   height: 300px;
   list-style: none;
-  background-color: aqua;
+  /* background-color: aqua; */
 }
 </style>

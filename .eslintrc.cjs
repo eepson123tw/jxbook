@@ -10,6 +10,7 @@ module.exports = {
     "plugin:storybook/recommended"
   ],
   env: {
+    node: true,
     "vue/setup-compiler-macros": true
   },
   rules: {

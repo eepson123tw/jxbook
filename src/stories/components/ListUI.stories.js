@@ -14,12 +14,12 @@ export default {
     list: {
       type: { name: "Array", required: true },
       description: "陣列資料",
-      // table: {
-      //   type: {
-      //     summary: "Something short",
-      //     detail: "Something really really long"
-      //   }
-      // },
+      table: {
+        //建立可收縮的樣態
+        category: "list",
+        //子層收縮
+        subcategory: "Button colors"
+      },
       // defaultValue: "empty",
       control: {
         type: "array"
@@ -27,6 +27,11 @@ export default {
     }
   },
   parameters: {
+    docs: {
+      description: {
+        component: "列表組件" //覆蓋默認組件描述。
+      }
+    },
     backgrounds: {
       values: [
         { name: "red", value: "#f00" },
